@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+<!------ Link to this page:
+
+https://dennkenobi.github.io/NotionStuff/NavMenus.html
+
+--------->
+
+<!-- backup copy
+	
+	<nav class="navMenu  border">
+		<a id="main-dashboard" onclick="navigate(this.id)" href="#"> Main Dashboard |</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> Inbox |</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> Projects |</a>
+		<a id="aol" onclick="navigate(this.id)" href="#"> Areas of Life |</a>
+		<a id="resources" onclick="navigate(this.id)" href="#"> Resources |</a>
+		<a id="archive" onclick="navigate(this.id)" href="#"> Archive</a>
+
+
+
+	</nav>
+
+-->
+	
+	<nav class="navMenu  border">
+		<a id="main-dashboard" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-gauge-high"></i> Main Dashboard  |  </a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-inbox"></i> Inbox  |  </a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects  |  </a>
+		<a id="aol" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-infinity"></i> Areas of Life  |  </a>
+		<a id="resources" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-paperclip"></i> Resources  |  </a>
+		<a id="archive" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-boxes-stacked"></i> Archive</a>
+
+
+
+	</nav>
+
+
+	
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'main-dashboard')
+				window.open("https://www.notion.so/MAIN-DASHBOARD-faf4fe2d7a1846cbba93eadcd020362b?pvs=4", '_parent').focus();
+			else if (id == "inbox")
+				window.open("https://www.notion.so/INBOX-3bbf0174dee9455a9cafcacfa286f79c?pvs=4", '_parent').focus();
+			else if (id == "projects")
+				window.open("https://www.notion.so/PROJECTS-05b0c1092720414c8d8fa6495b2a094d?pvs=4", '_parent').focus();
+			else if (id == "aol")
+				window.open("https://www.notion.so/AREAS-of-LIFE-8a4d063b77fb43b5a7a9e5aeaf155ca0?pvs=4", '_parent').focus();
+			else if (id == "resources")
+				window.open("https://www.notion.so/RESOURCES-28699e221bcc47daac081906272e1483?pvs=4", '_parent').focus();
+			else if (id == "archive")
+				window.open("https://www.notion.so/ARCHIVE-196f5fc41bc642c88c2c7404684d790b?pvs=4", '_parent').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
