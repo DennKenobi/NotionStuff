@@ -57,17 +57,16 @@
 
 <body>
 
-<!------ Link to this page:
+<!--------------- Link to this page:
 
-https://dennkenobi.github.io/NotionStuff/NavMenus.html
+https://dennkenobi.github.io/NotionStuff/VertNav.html
 
---------->
-
-<!-- backup copy
+---------------->
 	
+<!-- backup copy
 	<nav class="navMenu  border">
 		<a id="main-dashboard" onclick="navigate(this.id)" href="#"> Main Dashboard |</a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"> Inbox |</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> Inbox</a>
 		<a id="projects" onclick="navigate(this.id)" href="#"> Projects |</a>
 		<a id="aol" onclick="navigate(this.id)" href="#"> Areas of Life |</a>
 		<a id="resources" onclick="navigate(this.id)" href="#"> Resources |</a>
@@ -76,15 +75,15 @@ https://dennkenobi.github.io/NotionStuff/NavMenus.html
 
 
 	</nav>
-
 -->
+
 	
 	<nav class="navMenu  border">
-		<a id="main-dashboard" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-gauge-high"></i> Main Dashboard  |  </a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-inbox"></i> Inbox  |  </a>
-		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects  |  </a>
-		<a id="aol" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-infinity"></i> Areas of Life  |  </a>
-		<a id="resources" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-paperclip"></i> Resources  |  </a>
+		<a id="main-dashboard" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-gauge-high"></i> Main Dashboard</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-inbox"></i> Inbox</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects</a>
+		<a id="aol" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-infinity"></i> Areas of Life</a>
+		<a id="resources" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-paperclip"></i> Resources</a>
 		<a id="archive" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-boxes-stacked"></i> Archive</a>
 
 
@@ -96,7 +95,7 @@ https://dennkenobi.github.io/NotionStuff/NavMenus.html
 
 	<script>
 
-		let direction = "horizontal";
+		let direction = "vertical";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
